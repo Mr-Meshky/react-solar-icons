@@ -1,0 +1,62 @@
+{
+  "name": "react-solar-icons",
+  "version": "1.0.0",
+  "description": "A collection of React icon components with multiple variants.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "generate-icons": "node --loader ts-node/esm scripts/generate-icons.ts",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mr-Meshky/react-solar-icons"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "components",
+    "svg",
+    "icon-library",
+    "solar-icons"
+  ],
+  "author": "MrMeshky <mr.meshky@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "camelcase": "^8.0.0",
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@svgr/rollup": "^8.1.0",
+    "@types/camelcase": "^5.2.4",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.28",
+    "cheerio": "^1.0.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "prettier": "^3.3.3",
+    "rollup": "^4.24.3",
+    "svgo": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14"
+  }
+}
