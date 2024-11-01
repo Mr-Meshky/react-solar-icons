@@ -17,6 +17,11 @@ export default {
       exports: "named",
     },
   ],
-  plugins: [resolve(), commonjs(), typescript(), svgr()],
+  plugins: [
+    resolve(),
+    commonjs(),
+    typescript({ tsconfig: "./tsconfig.json" }),
+    svgr(),
+  ],
   external: ["react"],
 };

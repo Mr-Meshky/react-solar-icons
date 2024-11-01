@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
+    "module": "ESNext",
+    "declaration": true,
+    "outDir": "./dist",
     "strict": true,
-    "skipLibCheck": true,
+    "esModuleInterop": true,
     "jsx": "react",
-    "typeRoots": ["./node_modules/@types", "./@types"]
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*", "scripts/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
